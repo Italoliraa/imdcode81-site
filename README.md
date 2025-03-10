@@ -1,6 +1,6 @@
 # Em construção...
 
-1️⃣ Seção Herói (Cabeçalho chamativo).
+1️⃣ Cabeçalho chamativo
 * Um slogan forte (exemplo: "Conectando programadores e criando oportunidades!" ).
 
 2️⃣ Sobre a Comunidade
