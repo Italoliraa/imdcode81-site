@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMD Code81</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .social-icon {
+      transition: color 0.3s;
+    }
+
+    .social-icon.linkedin:hover {
+      color: #0A66C2;
+    }
+
+    .social-icon.instagram:hover {
+      color: #C13584;
+    }
+
+    .social-icon.whatsapp:hover {
+      color: #25D366;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-100 via-white to-blue-100 min-h-screen flex flex-col items-center justify-center px-4 py-10">
+
+  <h1 class="text-3xl font-bold text-blue-800 mb-10">Feedback da Comunidade 💬</h1>
+
+  <div class="flex flex-col md:flex-row gap-6 items-center justify-center">
+    <!-- Feedback 1 -->
+    <div class="bg-white w-80 shadow-xl rounded-xl p-4 hover:scale-105 transition duration-300 ease-in-out">
+      <div class="flex items-center space-x-4 mb-3">
+        <img src="hoffman.jpeg" alt="Foto da pessoa" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <h2 class="text-md font-semibold text-blue-700">Mattheaus Hoffman</h2>
+          <p class="text-xs text-gray-500">Participante</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-sm leading-snug">
+        Agradeço demais a vocês e a poder participar dessa comunidade que é tão unida. As conexões que fiz aqui são incríveis!
+      </p>
+    </div>
+
+    <!-- Feedback 2 -->
+    <div class="bg-white w-80 shadow-xl rounded-xl p-4 hover:scale-105 transition duration-300 ease-in-out">
+      <div class="flex items-center space-x-4 mb-3">
+        <img src="fabio.jpg" alt="Foto da pessoa" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <h2 class="text-md font-semibold text-blue-700">Fábio Bsb</h2>
+          <p class="text-xs text-gray-500">Participante</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-sm leading-snug">
+        Nunca imaginei que encontraria um grupo tão acolhedor e motivador. Aqui me senti visto e incentivado a seguir em frente. Vocês me inspiram!
+      </p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="container mt-16">
+    <footer class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 my-4 border-top text-center text-md-start">
+      <div class="mb-3 mb-md-0">
+        <span class="text-muted">© 2025 Imd-Code81, Community Tech.</span>
+      </div>
+
+      <ul class="nav justify-content-center justify-content-md-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.linkedin.com/company/imd-code81/?viewAsMember=true" target="_blank">
+            <i class="fab fa-linkedin fa-lg social-icon linkedin"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.instagram.com/imd_code81/" target="_blank">
+            <i class="fab fa-instagram fa-lg social-icon instagram"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#" target="_blank">
+            <i class="fab fa-whatsapp fa-lg social-icon whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+</html>
