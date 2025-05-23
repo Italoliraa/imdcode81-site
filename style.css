@@ -1,0 +1,47 @@
+
+  #eventos .card {
+    background-color: #99ead1;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  .fonte-evento {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #111;
+  }
+  
+  #eventos .evento-img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  #eventos strong {
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  #eventos .evento-btn {
+    margin-top: 12px;
+    background-color: #222;
+    color: #0dcaf0;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #eventos .evento-btn:hover:not([disabled]) {
+    background-color: #333;
+  }
+  
+  #eventos .evento-btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

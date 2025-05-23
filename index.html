@@ -1,304 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMD Code81</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
 
-    <style>
-      body {
-        scroll-behavior: smooth;
-      }
-      .hero {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        color: white;
-        padding: 100px 0;
-        text-align: center;
-      }
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      .info-container p {
-        font-size: 1.15rem;
-      }
-      .benefits .card {
-        border: none;
-        text-align: center;
-      }
-      .footer {
-        background-color: #111;
-        color: white;
-        padding: 20px 0;
-      }
-      .footer a {
-        color: #0dcaf0;
-        margin: 0 10px;
-      }
-      .square-card {
-        aspect-ratio: 1 / 1;
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      #beneficts-cards {
-        margin: 0px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMD Code81</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-      @media (min-width: 1200px) {
-        #Beneficts {
-          max-width: 500px;
-        }
-      }
+  <style>
+    .social-icon {
+      transition: color 0.3s;
+    }
 
-      @media (max-width: 800px) {
-        #sobre .col-lg-6 {
-          text-align: center;
-        }
+    .social-icon.linkedin:hover {
+      color: #0A66C2;
+    }
 
-        #Beneficts {
-          max-width: 500px;
-        }
-      }
+    .social-icon.instagram:hover {
+      color: #C13584;
+    }
 
-      @media (max-width: 600px) {
-        #sobre .col-lg-6 {
-          text-align: center;
-        }
+    .social-icon.whatsapp:hover {
+      color: #25D366;
+    }
+  </style>
+</head>
 
-        #sobre .row.justify-content-center {
-          flex-direction: column;
-          align-items: center;
-          gap: 1rem;
-        }
+<body class="bg-gradient-to-r from-blue-100 via-white to-blue-100 min-h-screen flex flex-col items-center justify-center px-4 py-10">
 
-        #sobre .row.justify-content-center .col-6 {
-          width: 100%;
-          max-width: 300px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/mnt/data/14f64a01-d019-41f6-b63d-0fc2efc3d6c6.png"
-            alt="Logo IMD Code81"
-            width="50"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#beneficios">Benefícios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#eventos">Eventos e Hackathons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos e Recursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#participar">Como Participar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#feedbacks">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <h1 class="text-3xl font-bold text-blue-800 mb-10">Feedback da Comunidade 💬</h1>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-      <div class="container">
-        <h1>Conectando programadores e criando oportunidades!</h1>
-        <a href="#participar" class="btn btn-primary mt-4"
-          >Junte-se à comunidade</a
-        >
-      </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Bloco "Sobre" -->
-          <div class="info-container col-lg-6 mb-5 mb-lg-0">
-            <h2 class="fw-bold mb-4">Sobre</h2>
-            <p class="text-muted">
-              O IMD Code81 é uma comunidade de tecnologia que tem como missão
-              conectar desenvolvedores, apoiar iniciantes e criar oportunidades
-              através da troca de conhecimento, eventos, projetos colaborativos
-              e muito mais.
-            </p><br>
-            <p class="text-muted">
-              Juntos, podemos nos ajudar a aprimorar nossas habilidades, buscar novos conhecimentos, criar uma boa rede de contatos e fortalecer tudo que um programador, seja novo ou experiente, precisa ter, se junte a IMD Code e embarque nessa jornada com a gente.
-            </p>
-          </div>
-
-          <!-- Bloco "Benefícios de Participar" -->
-          <div id="Beneficts" class="col-lg-6 mx-auto">
-            <h2 class="fw-bold mb-4 text-center">Benefícios de Participar</h2>
-            <div id="beneficts-cards" class="row gx-5 gy-4 justify-content-center">
-              <div class="col-6">
-                <div class="card text-center p-3 square-card">
-                  <div class="mb-2">
-                    <i
-                      class="bi bi-graph-up"
-                      style="font-size: 2rem; color: #0d6efd"
-                    ></i>
-                  </div>
-                  <p class="mb-0">Acesso a projetos colaborativos</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card text-center p-3 square-card">
-                  <div class="mb-2">
-                    <i
-                      class="bi bi-people"
-                      style="font-size: 2rem; color: #0d6efd"
-                    ></i>
-                  </div>
-                  <p class="mb-0">Networking com profissionais da área</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card text-center p-3 square-card">
-                  <div class="mb-2">
-                    <i
-                      class="bi bi-lightbulb"
-                      style="font-size: 2rem; color: #0d6efd"
-                    ></i>
-                  </div>
-                  <p class="mb-0">eventos e hackathons</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="card text-center p-3 square-card">
-                  <div class="mb-2">
-                    <i
-                      class="bi bi-chat-dots"
-                      style="font-size: 2rem; color: #0d6efd"
-                    ></i>
-                  </div>
-                  <p class="mb-0">
-                    Troca de conhecimento e suporte para iniciantes
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Eventos e Hackathons -->
-    <section id="eventos" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Eventos e Hackathons</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card p-3">
-              Oficina: “Vencendo a IA e passando na análise de currículos”
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card p-3">
-              Hackathon: “Segurança e Privacidade - Cibersegurança”
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card p-3">
-              Oficina em breve: “Potencialize seu LinkedIn com IA”
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projetos e Recursos -->
-    <section id="projetos" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Projetos e Recursos</h2>
-        <p>
-          Confira projetos desenvolvidos pela comunidade e acesse materiais
-          educativos, cursos e nosso conteúdo no Instagram.
-        </p>
-      </div>
-    </section>
-
-    <!-- Como Participar -->
-    <section id="participar" class="py-5">
-      <div class="container text-center">
-        <h2 class="mb-4">Como Participar</h2>
-        <div class="d-flex justify-content-center flex-wrap gap-3">
-          <a href="#" class="btn btn-outline-primary">Instagram</a>
-          <a href="#" class="btn btn-outline-success">WhatsApp</a>
-          <a href="#" class="btn btn-outline-info">LinkedIn</a>
-          <a href="#" class="btn btn-outline-dark">Discord</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Feedbacks -->
-    <section id="feedbacks" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Depoimentos</h2>
-        <p class="text-center">
-          “Participar do IMD Code81 foi um divisor de águas na minha carreira.”
-          - Membro
-        </p>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center" id="contato">
-      <div class="container">
-        <p>IMD Code81 - Comunidade de Tecnologia</p>
+  <div class="flex flex-col md:flex-row gap-6 items-center justify-center">
+    <!-- Feedback 1 -->
+    <div class="bg-white w-80 shadow-xl rounded-xl p-4 hover:scale-105 transition duration-300 ease-in-out">
+      <div class="flex items-center space-x-4 mb-3">
+        <img src="hoffman.jpeg" alt="Foto da pessoa" class="w-12 h-12 rounded-full object-cover">
         <div>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Discord</a>
+          <h2 class="text-md font-semibold text-blue-700">Mattheaus Hoffman</h2>
+          <p class="text-xs text-gray-500">Participante</p>
         </div>
-        <p class="mt-2">
-          &copy; 2025 IMD Code81. Todos os direitos reservados.
-        </p>
       </div>
-    </footer>
+      <p class="text-gray-700 text-sm leading-snug">
+        Agradeço demais a vocês e a poder participar dessa comunidade que é tão unida. As conexões que fiz aqui são incríveis!
+      </p>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Feedback 2 -->
+    <div class="bg-white w-80 shadow-xl rounded-xl p-4 hover:scale-105 transition duration-300 ease-in-out">
+      <div class="flex items-center space-x-4 mb-3">
+        <img src="fabio.jpg" alt="Foto da pessoa" class="w-12 h-12 rounded-full object-cover">
+        <div>
+          <h2 class="text-md font-semibold text-blue-700">Fábio Bsb</h2>
+          <p class="text-xs text-gray-500">Participante</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-sm leading-snug">
+        Nunca imaginei que encontraria um grupo tão acolhedor e motivador. Aqui me senti visto e incentivado a seguir em frente. Vocês me inspiram!
+      </p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="container mt-16">
+    <footer class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 my-4 border-top text-center text-md-start">
+      <div class="mb-3 mb-md-0">
+        <span class="text-muted">© 2025 Imd-Code81, Community Tech.</span>
+      </div>
+
+      <ul class="nav justify-content-center justify-content-md-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.linkedin.com/company/imd-code81/?viewAsMember=true" target="_blank">
+            <i class="fab fa-linkedin fa-lg social-icon linkedin"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.instagram.com/imd_code81/" target="_blank">
+            <i class="fab fa-instagram fa-lg social-icon instagram"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="#" target="_blank">
+            <i class="fab fa-whatsapp fa-lg social-icon whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
 </html>
